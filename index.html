@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>Pranit Sehgal</title>
+
+</head>
+<nav>
+	<div class="nav-container">
+	  <a href="#work" class="nav-link">Projects</a>
+	  <a href="about.html" class="nav-link">About</a>
+	  <a href="work.html" class="nav-link">Work Experience</a>
+	</div>
+</nav>
+
+<body>
+	<div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+		<div class="project">
+			<img class="image" src="AI_Fusion.png" data-project-id="fusion" draggable="false" onclick="FullView(this.src, this.dataset.projectId)" />
+			<div class="project-name">AI CONTENT FUSION WEB APP</div>
+		</div>
+		<div class="project">
+			<img class="image" src="Rhythmpass.png" data-project-id="rhythmpass" draggable="false" onclick="FullView(this.src, this.dataset.projectId)" />
+			<div class="project-name">RHYTHM PASSWORD</div>
+		</div>
+		<div class="project">
+			<img class="image" src="Voice Recognition.png" data-project-id="voice_recognition" draggable="false" onclick="FullView(this.src, this.dataset.projectId)" />
+			<div class="project-name">VOICE RECOGNITION FOR MENTAL HEALTH</div>
+		</div>
+		<div class="project">
+			<img class="image" src="android malware.png" data-project-id="android_malware" draggable="false" onclick="FullView(this.src, this.dataset.projectId)" />
+			<div class="project-name">ANDROID MALWARE DETECTION</div>
+		</div>
+		<div class="project">
+			<img class="image" src="Ensemble Method.png" data-project-id="ensemble_method" draggable="false" onclick="FullView(this.src, this.dataset.projectId)" />
+			<div class="project-name">TWITTER SENTIMENT ANALYSIS</div>
+		</div>
+		<div class="project">
+			<img class="image" src="hp_better.gif" data-project-id="reinforcement" draggable="false" onclick="FullView(this.src, this.dataset.projectId)" />
+			<div class="project-name">INVERSE REINFORCEMENT LEARNING - DREX</div>
+		</div>
+		<div class="project">
+			<img class="image" src="Posture Detection.png" data-project-id="posture_detection" draggable="false" onclick="FullView(this.src, this.dataset.projectId)" />
+			<div class="project-name">POSTURE DETECTION USING ML</div>
+		</div>
+		<div class="project">
+			<img class="image" src="CNN.png" data-project-id="cnn" draggable="false" onclick="FullView(this.src, this.dataset.projectId)" />
+			<div class="project-name">CNN IMAGE CLASSIFICATION</div>
+		</div>
+	</div>
+	
+
+	
+	
+	
+	
+
+	<!-- Modal Structure -->
+	<div id="modal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<div class="modal-body">
+				<img id="modal-image" src="" class="modal-image">
+				<div id="modal-description">
+					<h2 id="project-title"></h2>
+					<div id="project-description"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	
+	
+
+</body>
+<script src="java.js"></script>  
+
+</html>
