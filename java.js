@@ -291,8 +291,8 @@ const projectDetails = {
     
             <h3>Conclusion</h3>
             <p>The addition of pooling layers in Phase 2 yielded the best performance, emphasizing the balance between model complexity and efficiency. Future work will explore deeper architectures, optimize dropout rates, and focus on hyperparameter tuning, particularly considering the challenges of overfitting.</p>
-            <p><strong>Explore the code on GitHub:</strong></p>
-            <a href="https://github.com/pranit1812/Posture-Detection-using-Machine-Learning-" target="_blank">GitHub Repository</a>
+            <p><strong>Explore the code on Github</strong></p>
+            <a href="https://github.com/pranit1812/Comparative-Analysis-of-CNN-Designs-for-CIFAR-10-Object-Classification" target="_blank">GitHub Repository</a>
         `
     }
     
