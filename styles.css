@@ -11,34 +11,35 @@ body {
 }
 
 nav {
-    background-color: #141414;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 10;
+  background-color: #141414;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
 }
 
 .nav-container {
-    display: inline-block;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .nav-link {
-    color: white;
-    margin: 0 15px;
-    font-size: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    opacity: 0.6;
-    transition: opacity 0.3s ease;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
 }
 
 .nav-link:hover, .nav-link:focus {
-    opacity: 1;
+  opacity: 1;
 }
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 :root {
@@ -148,6 +149,7 @@ ul li a:hover {
   border-radius: 10px;
   transition: 0.3s;
   cursor: pointer;
+  align-self: center;
 }
 
 .hire__me {
@@ -201,29 +203,11 @@ ul li a:hover {
   }
   
 @media (width < 750px) {
-  nav .checkbox {
-    display: block;
-  }
-
-  ul {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 85px);
-    left: -100%;
-    top: 85px;
-    background-color: var(--extra-light);
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-  }
-
-  nav #check:checked ~ ul {
-    left: 0;
-  }
-
-  ul li a {
-    font-size: 1.25rem;
-  }
+  nav {
+    position: static;
+    margin-bottom: 20px;
+}
+  
 
   .section__container {
     padding: 10rem 1rem 5rem 1rem;
@@ -232,6 +216,7 @@ ul li a:hover {
   }
 
   .image {
+    margin-top: -30%;
     grid-area: 1/1/2/2;
   }
 
@@ -241,7 +226,7 @@ ul li a:hover {
 }
 
 .social-icons {
-    text-align: left;
+    text-align: center;
     margin-top: 20px; /* Adjust the margin as needed */
     margin-bottom: 30px;
 }
