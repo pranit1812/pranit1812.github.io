@@ -1,65 +1,64 @@
-body{
-	height: 100vh;
-	width: 100vh;
-	background-color: #141414;
-	margin: 0rem;
-	overflow: hidden;
-
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #141414;
+    margin: 0;
+    overflow: hidden;
 }
 
 nav {
-	background-color: #141414; /* Or any other color you prefer */
-	color: #fff;
-	text-align: center;
-	padding: 20px 0;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	z-index: 10;
-  }
-  
-  .nav-container {
-	display: inline-block;
-	/* Add additional styling if needed */
-  }
-  
-  .nav-link {
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	color: white;
-	margin: 0 15px;
-	font-size: 20px;
-	text-decoration: none;
-	text-transform: uppercase;
-	opacity: 0.6;
-	transition: opacity 0.3s ease;
-  }
-  
-  .nav-link:hover, .nav-link:focus {
-	opacity: 1;
-  }
+    background-color: #141414;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
 
-  #image-track {
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-link {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.nav-link:hover, .nav-link:focus {
+    opacity: 1;
+}
+
+#image-track {
     display: flex;
     gap: 4vmin;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     margin-bottom: 50px;
+    overflow-x: hidden;
 }
 
 .project {
-    width: 35vmin;  /* Match width to image width */
-    height: auto;  /* Adjust height automatically */
+    width: 35vmin;
     display: flex;
     flex-direction: column;
     align-items: center;
-    cursor: pointer; /* Ensures cursor pointer on the entire block */
+    cursor: pointer;
 }
 
 .image {
-    width: 100%;  /* Ensures image takes up the full width of its container */
-    height: 50vmin;  /* Image height as specified previously */
+    width: 100%;
+    height: 50vmin;
     object-fit: cover;
     border-radius: 30px;
 }
@@ -67,72 +66,15 @@ nav {
 .project-name {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
-    margin-top: 30px;  /* Space between the image and the text */
+    margin-top: 30px;
     opacity: 0.6;
     transition: opacity 0.3s ease;
-    text-align: center;  /* Ensures text is centered below the image */
-    font-size: 25;
+    text-align: center;
+    font-size: 15px;
 }
 
 .project-name:hover {
     opacity: 1;
-}
-
-
-#image-track > .image img:hover {
-	cursor: pointer;
-	transform: scale(1.2);
-
-}
-
-#image-track{
-	display: flex;
-	gap:  4vmin;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(0%,-50%);
-}
-
-
-.span {
-  display: inline-block;
-  width: 100px;
-}
-
-
-
-
-#description-container {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50%;
-    background-color: #fff;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    color: #333;
-    z-index: 5;
-    overflow-y: auto; /* Enable scrolling if content is too long */
-    height: 80vh; /* Limit height to prevent overflow */
-}
-
-#description-container h2 {
-    color: #2C3E50; /* Dark blue color for titles */
-    margin-bottom: 16px;
-}
-
-#description-container h3 {
-    color: #2980B9; /* Lighter blue color for subtitles */
-    margin-top: 20px;
-}
-
-#description-container p, #description-container ul {
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: justify;
 }
 
 .modal {
@@ -144,28 +86,28 @@ nav {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(20, 20, 20, 0.97); /* Adjusted for translucency */
+    background-color: rgba(20, 20, 20, 0.97);
 }
 
 .modal-content {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.15); /* Light translucent background */
+    background-color: rgba(255, 255, 255, 0.15);
     margin: 10% auto;
-	margin-top: 5%;
+    margin-top: 5%;
     padding: 0;
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Slightly visible border */
-    border-radius: 10px; /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     animation-name: animatetop;
-    animation-duration: 0.4s; 	
+    animation-duration: 0.4s;
 }
 
 .modal-body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: 'Calibri', sans-serif; /* Set font to Calibri */
+    font-family: 'Calibri', sans-serif;
 }
 
 .modal-image {
@@ -178,18 +120,18 @@ nav {
     width: 50%;
     padding: 20px;
     overflow-y: auto;
-    color: #fff; /* Ensure text is readable */
+    color: #fff;
 }
 
 #modal-description a {
-    color: #ffffff; /* Set link color to white */
-    text-decoration: none; /* Optional: removes underline from links */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 #modal-description a:hover, #modal-description a:focus {
-    color: #dddddd; /* Slightly darker white for hover effect */
-    text-decoration: underline; /* Optional: underline on hover */
+    color: #dddddd;
+    text-decoration: underline;
 }
 
 .close {
@@ -201,28 +143,20 @@ nav {
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
 
-/* Ensure all text inside modal uses the desired font */
 .modal-content * {
-    font-family: 'Calibri', sans-serif; /* Apply Calibri to all content */
+    font-family: 'Calibri', sans-serif;
 }
 
-/* Add other styles and media queries as necessary to make the layout responsive */
-
-
-/* Add animation for the modal to slide in top */
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
 }
-
-
 
 .work-experience {
     display: flex;
@@ -231,12 +165,12 @@ nav {
     align-items: center;
     height: 100vh;
     color: white;
-    overflow-x: auto; /* Allows horizontal scrolling if the items don't fit */
+    overflow-x: auto;
     padding: 20px;
 }
 
 .experience {
-    flex: 0 0 30%; /* Flex-grow, Flex-shrink, Flex-basis */
+    flex: 0 0 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,7 +178,7 @@ nav {
 }
 
 .experience-logo {
-    width: 100px; /* Adjust based on your logo sizes */
+    width: 100px;
     height: auto;
     margin-bottom: 20px;
 }
@@ -256,15 +190,45 @@ nav {
 }
 
 @media (max-width: 768px) {
-    .work-experience {
-        flex-direction: column;
-        align-items: center;
-        overflow-x: hidden;
-        overflow-y: auto;
+    body {
+        overflow: visible;
     }
 
-    .experience {
-        width: 80%; /* Full width for smaller screens */
-        margin: 10px 0;
+    nav {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    #image-track {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding: 0;
+        box-sizing: border-box;
+        white-space: nowrap;
+    }
+
+    .project {
+        flex: 0 0 80%;
+        display: inline-block;
+        scroll-snap-align: right;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .image {
+        width: auto;
+        height: auto;
+        max-height: 50vh; /* Ensure the image is fully visible */
+        object-fit: contain; /* Ensures the image fits within the container */
+        margin-left: auto;
+    }
+
+    .project-name {
+        font-size: 15px;
+        margin-top: 10px;
+        white-space: normal;
+        text-align: center;
     }
 }
